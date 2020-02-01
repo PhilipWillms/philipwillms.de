@@ -1,13 +1,16 @@
 import React from "react"
-import { Description } from "../components/description"
 import { graphql } from "gatsby"
+import { Description } from "../components/description"
+import { Project } from "../components/project"
 
 const IndexPage = props => (
-  <div className="flex flex-col items-center">
+  <div className="flex flex-col items-center bg-gray-100">
     <Description
       descriptionText={props.data.descriptionContent}
       headerImage={props.data.headerImage}
     />
+    <Project />
+    <Project />
   </div>
 )
 
