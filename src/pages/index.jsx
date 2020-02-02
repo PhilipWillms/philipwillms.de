@@ -1,13 +1,17 @@
-import React from "react";
-import { Description } from "../components/description";
+import React from "react"
+import { Description } from "../components/description"
+import { graphql } from "gatsby"
 
 const IndexPage = props => (
   <div className="flex flex-col items-center">
-    <Description headerImage={props.data.headerImage} />
+    <Description
+      descriptionText={props.data.descriptionContent}
+      headerImage={props.data.headerImage}
+    />
   </div>
-);
+)
 
-export default IndexPage;
+export default IndexPage
 
 export const pageQuery = graphql`
   query {
@@ -18,5 +22,11 @@ export const pageQuery = graphql`
         }
       }
     }
+    descriptionContent: markdownRemark {
+      frontmatter {
+        name
+        descriptionText
+      }
+    }
   }
-`;
+`

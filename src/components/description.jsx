@@ -1,5 +1,5 @@
-import React from "react";
-import Img from "gatsby-image";
+import React from "react"
+import Img from "gatsby-image"
 
 export const Description = props => {
   return (
@@ -9,15 +9,16 @@ export const Description = props => {
         className="rounded-full w-24 h-24"
         fluid={props.headerImage.childImageSharp.fluid}
       />
-      <h1 className="text-xl mt-3 mb-1">Philip Willms</h1>
+      <h1 className="text-xl mt-3 mb-1">
+        {props.descriptionText.frontmatter.name}
+      </h1>
       <div className="text-gray-400 text-sm">
         <a className="italic">Email</a> | 
         <a className="italic"> Github</a> |<a className="italic"> Gitlab</a>
       </div>
       <p className="text-center text-lg mt-5 font-hairline text-gray-400 leading-relaxed tracking-wide">
-        Front-end Developer based in Bielefeld, Germany. Currently working at
-        Narando.
+        {props.descriptionText.frontmatter.descriptionText}
       </p>
     </div>
-  );
-};
+  )
+}
