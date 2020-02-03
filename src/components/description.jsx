@@ -20,3 +20,4 @@ export const Description = props => (
     </p>
   </div>
 );
+
