@@ -1,5 +1,5 @@
-import React from "react"
-import Img from "gatsby-image"
+import React from "react";
+import Img from "gatsby-image";
 
 export const Description = props => {
   return (
@@ -20,5 +20,5 @@ export const Description = props => {
         {props.descriptionText.frontmatter.descriptionText}
       </p>
     </div>
-  )
-}
+  );
+};
