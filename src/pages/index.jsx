@@ -1,10 +1,11 @@
-import React from "react"
-import { graphql } from "gatsby"
+import React from "react";
+import { graphql } from "gatsby";
 
-import { Description } from "../components/description"
-import { Project } from "../components/project"
-import { Footer } from "../components/footer"
-import Projects from "../markdown-pages/project.yaml"
+import { Description } from "../components/description";
+import { Header } from "../components/header";
+import { Project } from "../components/project";
+import { Footer } from "../components/footer";
+import Projects from "../markdown-pages/project.yaml";
 
 const IndexPage = props => (
   <div className="flex flex-col items-center bg-gray-100">
@@ -12,14 +13,15 @@ const IndexPage = props => (
       descriptionText={props.data.descriptionContent}
       headerImage={props.data.headerImage}
     />
+    <Header header="My Projects" />
     {Projects.map((project, index) => {
-      return <Project key={index} projectData={project} />
+      return <Project key={index} projectData={project} />;
     })}
     <Footer bielefeld={props.data.bielefeld} />
   </div>
-)
+);
 
-export default IndexPage
+export default IndexPage;
 
 export const pageQuery = graphql`
   query {
@@ -44,4 +46,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
