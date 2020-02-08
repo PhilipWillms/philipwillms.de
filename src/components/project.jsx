@@ -2,7 +2,7 @@ import React from "react";
 import { Label } from "./label";
 
 export const Project = props => (
-  <div className="flex flex-col items-left w-5/6 mt-10">
+  <div className="flex flex-col items-left w-5/6 mt-6">
     <h1 className="text-l font-bold mt-3 mb-1 text-gray-400 tex-weight">
       {props.projectData.title}
     </h1>
