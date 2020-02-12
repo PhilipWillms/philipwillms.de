@@ -1,20 +1,14 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Helmet from "react-helmet";
 
 import { Description } from "../components/description";
 import { Header } from "../components/header";
 import { Project } from "../components/project";
 import { Footer } from "../components/footer";
 import Projects from "../markdown-pages/project.yaml";
-import leptop from "../images/leptop.ico";
 
 const IndexPage = props => (
   <div className="flex flex-col items-center bg-gray-100">
-    <Helmet>
-      <link rel="icon" type="image/png" href={leptop} sizes="32x32" />
-      <title>Philip Willms</title>
-    </Helmet>
     <Description
       descriptionText={props.data.descriptionContent}
       headerImage={props.data.headerImage}
