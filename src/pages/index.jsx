@@ -1,35 +1,38 @@
-import React from "react";
-import { graphql } from "gatsby";
-import Helmet from "react-helmet";
+import React from "react"
+import { graphql, Link } from "gatsby"
+import Helmet from "react-helmet"
 
-import { Description } from "../components/description";
-import { Header } from "../components/header";
-import { Project } from "../components/project";
-import { Footer } from "../components/footer";
-import Projects from "../markdown-pages/project.yaml";
-import leptop from "../images/leptop.ico";
+import { TopBar } from "../components/topBar"
+import { Description } from "../components/description"
+import { Header } from "../components/header"
+import { Project } from "../components/project"
+import { Footer } from "../components/footer"
+import Projects from "../markdown/project.yaml"
+import leptop from "../images/leptop.ico"
 
 const IndexPage = props => (
-  <div className="flex items-center w-full justify-center bg-gray-100">
-    <div className="flex flex-col w-full items-center bg-gray-100 max-w-6xl">
+  <div className="flex w-full h-screen justify-center bg-gray-100">
+    <div className="flex flex-col w-full items-center bg-gray-100 max-w-screen-lg">
       <Helmet>
         <link rel="icon" type="image/png" href={leptop} sizes="32x32" />
         <title>Philip Willms</title>
+        <meta description="" />
       </Helmet>
+      <TopBar descriptionText={props.data.descriptionContent} />
       <Description
-        descriptionText={props.data.descriptionContent}
         headerImage={props.data.headerImage}
+        descriptionText={props.data.descriptionContent}
       />
-      <Header header="My Projects" />
-      {Projects.map((project, index) => {
-        return <Project key={index} projectData={project} />;
-      })}
+      {/* <Header header="Projects" />
+      {Projects.map((project, index) => (
+        <Project key={index} projectData={project} />
+      ))} */}
       <Footer bielefeld={props.data.bielefeld} />
     </div>
   </div>
-);
+)
 
-export default IndexPage;
+export default IndexPage
 
 export const pageQuery = graphql`
   query {
@@ -50,8 +53,10 @@ export const pageQuery = graphql`
     descriptionContent: markdownRemark {
       frontmatter {
         name
-        descriptionText
+        firstParagraph
+        secondParagraph
+        thirdParagraph
       }
     }
   }
-`;
+`

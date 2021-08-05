@@ -1,0 +1,29 @@
+- title: "Vertfarm"
+  labels: [["React", "bg-red-400"], ["Typescript", "bg-green-200"]]
+  textParagraphs:
+    [
+      "At vero eos et accusam et justo duo dolores et ea rebum. At vero eos et accusam et justo.",
+      "At vero eos et accusam et justo duo dolores et ea rebum.",
+      "At vero eos et accusam et justo duo dolores.",
+    ]
+  date: "12.08.2020"
+
+- title: "Budget Countdown"
+  labels: [["Swift", "bg-red-400"], ["Typescript", "bg-green-200"]]
+  textParagraphs:
+    [
+      "At vero eos et accusam et justo duo dolores et ea rebum. At vero eos et accusam et justo.",
+      "At vero eos et accusam et justo duo dolores et ea rebum.",
+      "At vero eos et accusam et justo duo dolores.",
+    ]
+  date: "12.08.2020"
+
+- title: "philipwillms.de"
+  labels: [["Swift", "bg-red-400"], ["Typescript", "bg-green-200"]]
+  textParagraphs:
+    [
+      "At vero eos et accusam et justo duo dolores et ea rebum. At vero eos et accusam et justo.",
+      "At vero eos et accusam et justo duo dolores et ea rebum.",
+      "At vero eos et accusam et justo duo dolores.",
+    ]
+  date: "12.08.2020"
