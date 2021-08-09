@@ -11,7 +11,7 @@ import Projects from "../markdown/project.yaml"
 import leptop from "../images/leptop.ico"
 
 const IndexPage = props => (
-  <div className="flex w-full h-screen justify-center bg-gray-100">
+  <div className="flex w-full h-screen justify-center bg-gray-100 font-lato">
     <div className="flex flex-col w-full items-center bg-gray-100 max-w-screen-lg">
       <Helmet>
         <link rel="icon" type="image/png" href={leptop} sizes="32x32" />

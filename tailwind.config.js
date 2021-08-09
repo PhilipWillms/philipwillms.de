@@ -1,6 +1,9 @@
 module.exports = {
   theme: {
     extend: {
+      fontFamily: {
+        lato: ["Lato"],
+      },
       colors: {
         gray: {
           "100": "#fdfdfd",
