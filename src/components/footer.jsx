@@ -8,7 +8,7 @@ export const Footer = props => (
       className="rounded-full w-6 h-6 mb-2"
       fluid={props.bielefeld.childImageSharp.fluid}
     />
-    <p className="text-black font-normal">
+    <p className="text-gray-400 font-normal">
       Bielefeld | {new Date().getFullYear()}
     </p>
   </div>

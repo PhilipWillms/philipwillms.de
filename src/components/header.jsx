@@ -1,7 +1,7 @@
-import React from "react";
+import React from "react"
 
 export const Header = props => (
-  <h1 className="float-left w-10/12 mt-16 font-medium text-sm text-gray-300">
+  <h1 className="float-left sm:w-8/12 w-11/12 mt-6 font-bold text-sm text-black">
     {props.header}
   </h1>
-);
+)
