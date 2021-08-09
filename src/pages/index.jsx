@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import Helmet from "react-helmet"
 
 import { TopBar } from "../components/topBar"
@@ -23,10 +23,10 @@ const IndexPage = props => (
         headerImage={props.data.headerImage}
         descriptionText={props.data.descriptionContent}
       />
-      {/* <Header header="Projects" />
+      <Header header="Projects" />
       {Projects.map((project, index) => (
         <Project key={index} projectData={project} />
-      ))} */}
+      ))}
       <Footer bielefeld={props.data.bielefeld} />
     </div>
   </div>

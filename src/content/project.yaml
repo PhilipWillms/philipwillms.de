@@ -1,29 +1,43 @@
-- title: "Vertfarm"
-  labels: [["React", "bg-red-400"], ["Typescript", "bg-green-200"]]
+- title: "Vertfarm 🥦"
+  labels:
+    [
+      ["JavaScript", "bg-green-200"],
+      ["React", "bg-red-400"],
+      ["StyledComponents", "bg-yellow-200"],
+    ]
+  link: "https://github.com/PhilipW97/Vertfarm"
   textParagraphs:
     [
-      "At vero eos et accusam et justo duo dolores et ea rebum. At vero eos et accusam et justo.",
-      "At vero eos et accusam et justo duo dolores et ea rebum.",
-      "At vero eos et accusam et justo duo dolores.",
+      "Dashboard to display and analyze data collected from indoor/vertical farming project.",
     ]
   date: "12.08.2020"
 
-- title: "Budget Countdown"
-  labels: [["Swift", "bg-red-400"], ["Typescript", "bg-green-200"]]
+- title: "Budget Countdown 💰"
+  labels:
+    [
+      ["Swift", "bg-blue-500"],
+      ["SwiftUI", "bg-purple-700"],
+      ["CoreData", "bg-purple-600"],
+    ]
   textParagraphs:
     [
-      "At vero eos et accusam et justo duo dolores et ea rebum. At vero eos et accusam et justo.",
-      "At vero eos et accusam et justo duo dolores et ea rebum.",
-      "At vero eos et accusam et justo duo dolores.",
+      "Budgeting IOS app to help keep an eye on a budget over a set timeframe.",
+      "Built with SwiftUI and CoreData.",
     ]
   date: "12.08.2020"
 
-- title: "philipwillms.de"
-  labels: [["Swift", "bg-red-400"], ["Typescript", "bg-green-200"]]
+- title: "philipwillms.de 👤"
+  labels:
+    [
+      ["JavaScript", "bg-green-200"],
+      ["Gatsby", "bg-yellow-400"],
+      ["Tailwind", "bg-purple-400"],
+    ]
+  link: "https://github.com/PhilipW97/philipwillms.de"
   textParagraphs:
     [
-      "At vero eos et accusam et justo duo dolores et ea rebum. At vero eos et accusam et justo.",
-      "At vero eos et accusam et justo duo dolores et ea rebum.",
-      "At vero eos et accusam et justo duo dolores.",
+      "This is the page you are currently on.",
+      "Personal site and portfolio of software developer Philip Willms.",
+      "Built with gatsby, styled with tailwindcss and deployed at vercel.",
     ]
   date: "12.08.2020"
