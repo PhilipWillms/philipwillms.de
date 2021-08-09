@@ -7,7 +7,7 @@ import { Description } from "../components/description"
 import { Header } from "../components/header"
 import { Project } from "../components/project"
 import { Footer } from "../components/footer"
-import Projects from "../markdown/project.yaml"
+import Projects from "../content/project.yaml"
 import leptop from "../images/leptop.ico"
 
 const IndexPage = props => (
