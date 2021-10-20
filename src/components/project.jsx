@@ -4,7 +4,7 @@ import { Label } from "./label"
 export const Project = props => (
   <a
     href={props.projectData.link}
-    className="flex flex-col items-left w-11/12 sm:w-8/12 mt-6"
+    className="flex flex-col items-left w-11/12 sm:w-8/12 mt-6 p-3 rounded-lg box-content cursor-pointer hover:shadow-md"
     target="_blank"
     rel="noreferrer"
   >
