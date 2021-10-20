@@ -10,28 +10,42 @@ import { Footer } from "../components/footer"
 import Projects from "../content/project.yaml"
 import leptop from "../images/leptop.ico"
 
-const IndexPage = props => (
-  <div className="flex w-full h-screen justify-center bg-gray-100 font-lato">
-    <div className="flex flex-col w-full items-center bg-gray-100 max-w-screen-lg">
-      <Helmet>
-        <link rel="icon" type="image/png" href={leptop} sizes="32x32" />
-        <title>Philip Willms</title>
-        <meta description="" />
-      </Helmet>
-      <TopBar descriptionText={props.data.descriptionContent} />
-      <Description
-        headerImage={props.data.headerImage}
-        descriptionText={props.data.descriptionContent}
-      />
-      <Header header="Projects" />
-      {Projects.map((project, index) => (
-        <Project key={index} projectData={project} />
-      ))}
-      <Footer bielefeld={props.data.bielefeld} />
-    </div>
-  </div>
-)
+const IndexPage = props => {
+  const {
+    data: {
+      descriptionContent: {
+        childMarkdownRemark: { frontmatter: contentFrontmatter },
+      },
+      seoContent: {
+        childMarkdownRemark: { frontmatter: seoFrontmatter },
+      },
+      headerImage,
+      bielefeld,
+    },
+  } = props
 
+  return (
+    <div className="flex w-full h-screen justify-center bg-gray-100 font-lato">
+      <div className="flex flex-col w-full items-center bg-gray-100 max-w-screen-lg">
+        <Helmet>
+          <link rel="icon" type="image/png" href={leptop} sizes="32x32" />
+          <title>{seoFrontmatter.title}</title>
+          <meta name="description" content={seoFrontmatter.description} />
+        </Helmet>
+        <TopBar title={contentFrontmatter.name} />
+        <Description
+          headerImage={headerImage}
+          frontmatter={contentFrontmatter}
+        />
+        <Header title="Projects" />
+        {Projects.map((project, index) => (
+          <Project key={index} projectData={project} />
+        ))}
+        <Footer bielefeld={bielefeld} />
+      </div>
+    </div>
+  )
+}
 export default IndexPage
 
 export const pageQuery = graphql`
@@ -50,12 +64,22 @@ export const pageQuery = graphql`
         }
       }
     }
-    descriptionContent: markdownRemark {
-      frontmatter {
-        name
-        firstParagraph
-        secondParagraph
-        thirdParagraph
+    descriptionContent: file(relativePath: { eq: "description.md" }) {
+      childMarkdownRemark {
+        frontmatter {
+          name
+          firstParagraph
+          secondParagraph
+          thirdParagraph
+        }
+      }
+    }
+    seoContent: file(relativePath: { eq: "seo.md" }) {
+      childMarkdownRemark {
+        frontmatter {
+          description
+          title
+        }
       }
     }
   }

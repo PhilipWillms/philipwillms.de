@@ -15,13 +15,10 @@ export const Description = props => (
         </p>
       </div>
       <p className="text-left text-md font-light text-gray-400 leading-relaxed">
-        {props.descriptionText.frontmatter.firstParagraph}
+        {props.frontmatter.firstParagraph}
       </p>
       <p className="text-left text-md mt-4 font-light text-gray-400 leading-relaxed">
-        {props.descriptionText.frontmatter.secondParagraph}
-      </p>
-      <p className="text-left text-md mt-4 font-light text-gray-400 leading-relaxed">
-        {props.descriptionText.frontmatter.thirdParagraph}
+        {props.frontmatter.secondParagraph}
       </p>
     </div>
   </div>
