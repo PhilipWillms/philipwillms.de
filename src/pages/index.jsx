@@ -25,8 +25,8 @@ const IndexPage = props => {
   } = props
 
   return (
-    <div className="flex w-full h-screen justify-center bg-gray-100 font-lato">
-      <div className="flex flex-col w-full items-center bg-gray-100 max-w-screen-lg">
+    <div className="flex justify-center w-full h-screen bg-gray-100 font-lato">
+      <div className="flex flex-col items-center w-full max-w-screen-lg bg-gray-100">
         <Helmet>
           <link rel="icon" type="image/png" href={leptop} sizes="32x32" />
           <title>{seoFrontmatter.title}</title>
@@ -37,10 +37,10 @@ const IndexPage = props => {
           headerImage={headerImage}
           frontmatter={contentFrontmatter}
         />
-        <Header title="Projects" />
+        {/* <Header title="Projects" />
         {Projects.map((project, index) => (
           <Project key={index} projectData={project} />
-        ))}
+        ))} */}
         <Footer bielefeld={bielefeld} />
       </div>
     </div>
