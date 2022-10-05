@@ -12,7 +12,7 @@ export const Project = props => (
       {props.projectData.title}
     </h1>
     {props.projectData.textParagraphs.map((_, index) => (
-      <p key={index} className="font-light mb-2 text-gray-400">
+      <p key={index} className="font-light mb-2 text-theme-400">
         {props.projectData.textParagraphs[index]}
       </p>
     ))}
