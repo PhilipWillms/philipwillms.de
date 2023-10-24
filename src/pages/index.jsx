@@ -5,6 +5,7 @@ import { TopBar } from "../components/topBar"
 import { Description } from "../components/description"
 import { Footer } from "../components/footer"
 import laptop from "../images/laptop.ico"
+import { Experience } from "../components/experience"
 
 const IndexPage = () => (
   <div className="flex justify-center w-full h-screen px-6 bg-theme-500 font-lato">
@@ -16,6 +17,7 @@ const IndexPage = () => (
       </Helmet>
       <TopBar />
       <Description />
+      <Experience />
       <Footer />
     </div>
   </div>
