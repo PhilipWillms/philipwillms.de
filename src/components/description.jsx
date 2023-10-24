@@ -14,7 +14,7 @@ export const Description = () => (
       </p>
       <p className="mt-4 text-left text-md font-light text-theme-300">
         <span>
-          Currently looking for a great company where I can join buildung an
+          Currently looking for a great company where I can join building an
           awesome product.
           <Briefcase className="inline ml-1 mb-1 w-4 h-4" />
           <br />
