@@ -20,7 +20,7 @@ export const Description = () => (
           <br />
           Feel free to reach out to me on{" "}
           <a
-            href="https://github.com/PhilipWillms"
+            href="https://www.linkedin.com/in/philip-willms-5a5245219"
             className="inline-flex items-center gap-1 cursor-pointer mr-2 border-transparent py-1  border-b hover:border-theme-300"
             target="_blank"
             rel="noreferrer"

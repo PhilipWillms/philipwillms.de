@@ -16,7 +16,7 @@ export const TopBar = () => (
         Github
       </a>
       <a
-        href="https://github.com/PhilipWillms"
+        href="https://www.linkedin.com/in/philip-willms-5a5245219"
         className="flex flex-row gap-1 items-center cursor-pointer mr-2 border-transparent py-1 text-white border-b hover:border-theme-300"
         target="_blank"
         rel="noreferrer"
