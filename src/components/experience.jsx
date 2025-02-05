@@ -10,16 +10,14 @@ export const Experience = () => (
         <div className="flex text-theme-instant text-lg items-center">
           Instant Commerce <Bolt className="inline w-4 h-4 ml-2" />
         </div>
-        <div>02/2022 - Present</div>
+        <div>02/2022 - 11/2023</div>
       </div>
       <div>
-        I started at Instant Commerce during its early stages as a Mid Frontend
-        Developer which gave me the opportunity to actively help shaping the
-        product. This role allowed me to enhance my React skills and explore new
-        frameworks and libraries. It was a dynamic and fast-paced environment,
-        fostering adaptability and innovation. Collaborating within a diverse,
-        international team was a valuable experience, expanding my
-        cross-cultural communication skills.
+        I joined Instant Commerce in its early stages as a Frontend Developer,
+        playing an active role in shaping the product. This experience
+        strengthened my React skills while allowing me to explore new frameworks
+        and libraries. Working in a dynamic, fast-paced environment fostered
+        adaptability and encouraged innovation.
       </div>
     </div>
     <div>
@@ -30,11 +28,12 @@ export const Experience = () => (
         <div>03/2019 - 02/2022</div>
       </div>
       <div>
-        As a Junior Frontend Developer at Narando, I was part of a small, agile
-        team of three developers. I contributed to building the latest product
-        version, gaining expertise in TypeScript and React. I held
-        responsibility for the frontend and benefited from the mentorship of
-        senior developers, enhancing my skills and knowledge.
+        As a Junior Frontend Developer at Narando, I worked in a small, agile
+        team, building the latest product version with TypeScript and React. I
+        took ownership of the frontend, implementing new features and refining
+        the user experience. Mentorship from senior developers helped me deepen
+        my expertise in modern frontend development, improving my
+        problem-solving and collaboration skills.
       </div>
     </div>
   </div>
