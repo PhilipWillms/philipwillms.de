@@ -1,3 +1,3 @@
 # philipwillms.de
 
-Built with gatsby, styled with tailwindcss and deployed at vercel.
+Built with react-router, styled with tailwindcss and deployed at vercel.

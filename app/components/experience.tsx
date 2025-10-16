@@ -1,11 +1,10 @@
-import React from "react"
-import { Microphone } from "../icons/microphone"
-import { Bolt } from "../icons/bolt"
+import { Bolt } from "./icons/bolt";
+import { Microphone } from "./icons/microphone";
 
 export const Experience = () => (
   <div className="flex flex-col w-full sm:w-9/12 text-theme-300 gap-6">
     <h1 className="font-bold text-xl text-white">Work experience</h1>
-    <div>
+    <div className="mb-6">
       <div className="flex justify-between items-center mb-2">
         <div className="flex text-theme-instant text-lg items-center">
           Instant Commerce <Bolt className="inline w-4 h-4 ml-2" />
@@ -37,4 +36,4 @@ export const Experience = () => (
       </div>
     </div>
   </div>
-)
+);

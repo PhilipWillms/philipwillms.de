@@ -12,8 +12,8 @@ module.exports = {
           "400": "#707070",
           // "500": "#282c35",
           "500": "#1A1A1A",
-          'instant': '#ffd101',
-          'narando': '#e74c3c'
+          instant: "#ffd101",
+          narando: "#e74c3c",
         },
       },
       spacing: {
@@ -30,4 +30,4 @@ module.exports = {
       },
     },
   },
-}
+};

@@ -1,5 +1,4 @@
-import React from "react"
-import { Link } from "gatsby"
+import { Link } from "react-router";
 
 export const TopBar = () => (
   <div className="flex justify-between w-full mt-4 max-w-4xl mb-10 flex-row items-center">
@@ -25,4 +24,4 @@ export const TopBar = () => (
       </a>
     </div>
   </div>
-)
+);
